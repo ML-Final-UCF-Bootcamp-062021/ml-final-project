@@ -1,15 +1,9 @@
 # ml-final-project
 Final Group project encompassing all topics learned while using machine learning
 
-# Project Ideas
-Hurrican Predictions**
-Goal: Using an api that contains historical hurricane data, machine learning would be used to predict areas that are likely to be hit in the future. 
-https://www.kaggle.com/jessemostipak/volcano-eruptions?select=eruptions.csv 
-https://earthdata.nasa.gov/
-https://www.kaggle.com/noaa/hurricane-database
-
-Food dessert**
-Goal: use income data to predict food dessert locations and perhaps illness in the food desserts. 
+# Food Desert
+Food desert**
+Goal: use income data to predict food desert locations and perhaps illness in the food deserts. 
 https://www.opportunityatlas.org/
 US Census
 https://www.ers.usda.gov/data-products/food-access-research-atlas/
