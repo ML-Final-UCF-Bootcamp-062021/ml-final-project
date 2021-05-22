@@ -2,10 +2,11 @@
 Final Group project encompassing all topics learned while using machine learning
 
 # Project Ideas
-Theme Park**
-Goal: Use machine learning to analyze wait times and make a prediction on future wait times, popularity, best times to visit the park, etc. 
-https://queue-times.com/en-US/parks
-Greg made an inquiry on pricing
+Hurrican Predictions**
+Goal: Using an api that contains historical hurricane data, machine learning would be used to predict areas that are likely to be hit in the future. 
+https://www.kaggle.com/jessemostipak/volcano-eruptions?select=eruptions.csv 
+https://earthdata.nasa.gov/
+https://www.kaggle.com/noaa/hurricane-database
 
 Food dessert**
 Goal: use income data to predict food dessert locations and perhaps illness in the food desserts. 
