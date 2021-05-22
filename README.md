@@ -7,10 +7,6 @@ Goal: Use machine learning to analyze wait times and make a prediction on future
 https://queue-times.com/en-US/parks
 Greg made an inquiry on pricing
 
-Natural Language Processing
-Small business owner - Best time to post for success
-PN Problems - commonly occurring errors based on frequency of keywords
-
 Food dessert**
 Goal: use income data to predict food dessert locations and perhaps illness in the food desserts. 
 https://www.opportunityatlas.org/
@@ -19,7 +15,7 @@ https://www.ers.usda.gov/data-products/food-access-research-atlas/
 AWS will be needed due to the size of the dataset. 
 
 Overall steps: 
-Decide on project 
+Decide on project
 Gather dataset
 Clean data using Pandas (or other methods)
 Use machine learning library on dataset
