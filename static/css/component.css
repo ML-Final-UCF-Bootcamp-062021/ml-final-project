@@ -1,4 +1,3 @@
-/* CSS styling for nav bar found at https://github.com/codrops/LineMenuStyles/blob/master/css/component.css*/
 /* Common styles for all menus */
 .menu {
 	line-height: 1;
@@ -40,8 +39,6 @@
 .menu__link:focus {
 	outline: none;
 }
-
-/* Individual styles */
 
 /* Alonso */
 .menu--alonso .menu__item {
@@ -138,5 +135,14 @@
 	.menu--alonso .menu__item:nth-child(5).menu__item--current ~ .menu__line {
 		-webkit-transform: translate3d(0, 12em, 0);
 		transform: translate3d(0, 12em, 0);
+	}
+}
+
+
+/* Stack items for smaller screens */
+@media screen and (max-width:55em) {
+	.menu__list {
+		display: block;
+		margin: 0 auto;
 	}
 }
