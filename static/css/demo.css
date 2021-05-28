@@ -65,7 +65,7 @@ a:focus {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
-	background: url(../img/link.svg) no-repeat center center;
+	background: no-repeat center center;
 	background-size: cover;
 }
 
@@ -248,7 +248,7 @@ a:focus {
 	padding: 0em 1em 4em;
 	text-align: center;
 	color: #fff;
-	background: #d94f5c url(../img/mouse.svg) no-repeat left 50% bottom 40px;
+	background: #d94f5c no-repeat left 50% bottom 40px;
 }
 
 .codrops-header h1 {
@@ -322,7 +322,7 @@ a:focus {
 	content: '\e004';
 }
 
-/* Demo links */
+Demo links
 .codrops-demos {
 	margin: 2em 0 0;
 }
@@ -336,48 +336,48 @@ a:focus {
 	color: #333;
 }
 
-/* Related demos */
-.content--related {
-	font-weight: bold;
-	padding: 10em 1em;
-	text-align: center;
-	background: #d94f5c;
+/*Related demos */
+ .content--related {
+font-weight: bold;
+padding: 10em 1em;
+text-align: center;
+background: #d94f5c;
 }
 
 .content__wrap--related {
-	max-width: 800px;
-	margin: 0 auto;
+max-width: 800px;
+margin: 0 auto;
 }
 
 .media-item {
-	display: inline-block;
-	padding: 1em;
-	vertical-align: top;
-	-webkit-transition: color 0.3s;
-	transition: color 0.3s;
+display: inline-block;
+padding: 1em;
+vertical-align: top;
+-webkit-transition: color 0.3s;
+transition: color 0.3s;
 }
 
 .media-item__img {
-	max-width: 100%;
-	opacity: 0.6;
-	-webkit-transition: opacity 0.3s;
-	transition: opacity 0.3s;
+max-width: 100%;
+opacity: 0.6;
+-webkit-transition: opacity 0.3s;
+transition: opacity 0.3s;
 }
 
 .media-item:hover .media-item__img,
 .media-item:focus .media-item__img {
-	opacity: 1;
+opacity: 1;
 }
 
 .media-item__title {
-	font-size: 1em;
-	margin: 0;
-	padding: 0.5em;
+font-size: 1em;
+margin: 0;
+padding: 0.5em;
 }
 
 @media screen and (max-width:50em) {
-	.section--intro {
-		font-size: 1em;
-	}
+.section--intro {
+	font-size: 1em;
+}
 
 }
