@@ -14256,10 +14256,22 @@ a.anchor-link {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://colab.research.google.com/github/ML-Final-UCF-Bootcamp-062021/ml-final-project/blob/howard/test.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Import-dependencies-and-mount-google-drive-to-access-data"><strong>Import dependencies and mount google drive to access data</strong><a class="anchor-link" href="#Import-dependencies-and-mount-google-drive-to-access-data">&#182;</a></h1><hr>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span> 
@@ -14295,7 +14307,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
@@ -14315,27 +14327,21 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;/content/gdrive/MyDrive/usda_data.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</pre></div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Read-in-csv-file-from-Gdrive"><strong>Read in csv file from Gdrive</strong><a class="anchor-link" href="#Read-in-csv-file-from-Gdrive">&#182;</a></h1><h1 id="Analyzed-the-data"><strong>Analyzed the data</strong><a class="anchor-link" href="#Analyzed-the-data">&#182;</a></h1><p>data was preprocessed before importing due to size of file. Original file had 90+ columns and many null/NaN values.  Team discussed the importance of the extra columns for the purpose of this code and decided it didn't have an impact on our objective.</p>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># read the csv data into dataframe</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;/content/gdrive/MyDrive/usda_data.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14351,7 +14357,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -14661,10 +14667,10 @@ a.anchor-link {
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -14675,76 +14681,10 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>CensusTract               int64
-Urban                     int64
-Pop2010                   int64
-OHU2010                   int64
-LILATracts_1And10         int64
-LILATracts_Vehicle        int64
-HUNVFlag                  int64
-LowIncomeTracts           int64
-PovertyRate             float64
- MedianFamilyIncome     float64
-LA1and10                  int64
-LATracts1                 int64
-lapop1                    int64
-lapop1share             float64
-lalowi1                   int64
-lalowi1share            float64
-lawhite1                  int64
-lawhite1share           float64
-lablack1                  int64
-lablack1share           float64
-laasian1                  int64
-laasian1share           float64
-lanhopi1                  int64
-lanhopi1share           float64
-laaian1                   int64
-laaian1share            float64
-laomultir1                int64
-laomultir1share         float64
-lahisp1                   int64
-lahisp1share            float64
-lahunv1                   int64
-lahunv1share            float64
-lasnap1                   int64
-lasnap1share            float64
-TractLOWI                 int64
-TractWhite                int64
-TractBlack                int64
-TractAsian                int64
-TractNHOPI                int64
-TractAIAN                 int64
-TractOMultir              int64
-TractHispanic             int64
-TractHUNV                 int64
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span>
@@ -14763,7 +14703,7 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -14791,13 +14731,19 @@ dtype: object</pre>
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Start-building-our-model"><strong>Start building our model</strong><a class="anchor-link" href="#Start-building-our-model">&#182;</a></h1>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">target</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;LILATracts_1And10&quot;</span><span class="p">]</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># define our target</span>
+<span class="n">target</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;LILATracts_1And10&quot;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14808,10 +14754,11 @@ dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;LILATracts_1And10&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># create data set without target data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;LILATracts_1And10&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">feature_names</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span>
 <span class="n">data</span><span class="o">.</span><span class="n">head</span>
 </pre></div>
@@ -14829,7 +14776,7 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -14860,10 +14807,11 @@ dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># split data for training and testing</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14874,10 +14822,11 @@ dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># create decision tree model</span>
+<span class="n">clf</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">()</span>
 <span class="n">clf</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </pre></div>
@@ -14895,7 +14844,7 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -14913,10 +14862,11 @@ dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># create random forest model</span>
+<span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 <span class="n">rf</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">rf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </pre></div>
@@ -14934,7 +14884,7 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -14952,7 +14902,7 @@ dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">rf</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14971,54 +14921,54 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[(0.2228674024758579, &#39;LowIncomeTracts&#39;),
- (0.1786290179770779, &#39;LA1and10&#39;),
- (0.10029988285135345, &#39; MedianFamilyIncome &#39;),
- (0.09221149772514041, &#39;LATracts1&#39;),
- (0.07390309154437132, &#39;PovertyRate&#39;),
- (0.06372219608795471, &#39;LILATracts_Vehicle&#39;),
- (0.02805638260649027, &#39;lapop1&#39;),
- (0.02676060835326468, &#39;Urban&#39;),
- (0.021185187382702367, &#39;lalowi1share&#39;),
- (0.018301828653525695, &#39;lasnap1share&#39;),
- (0.017883005316040992, &#39;lasnap1&#39;),
- (0.017391437498500188, &#39;lapop1share&#39;),
- (0.014145023918978285, &#39;lalowi1&#39;),
- (0.01335647192219853, &#39;lawhite1&#39;),
- (0.013342281235089739, &#39;TractLOWI&#39;),
- (0.010231953688465474, &#39;lahunv1share&#39;),
- (0.009441914385298499, &#39;lawhite1share&#39;),
- (0.006364800279687942, &#39;TractWhite&#39;),
- (0.006023675643463112, &#39;lablack1share&#39;),
- (0.004731210588970225, &#39;lahunv1&#39;),
- (0.004649685752304939, &#39;HUNVFlag&#39;),
- (0.004170690055996542, &#39;TractHUNV&#39;),
- (0.004090971822110776, &#39;laomultir1&#39;),
- (0.003966478600312554, &#39;laomultir1share&#39;),
- (0.0037427587234311567, &#39;TractAsian&#39;),
- (0.0036342610881746717, &#39;laasian1&#39;),
- (0.003467190353628314, &#39;OHU2010&#39;),
- (0.0032563243194422132, &#39;TractBlack&#39;),
- (0.0031000695527376066, &#39;lablack1&#39;),
- (0.0029295833237896417, &#39;laasian1share&#39;),
- (0.002677507320410247, &#39;Pop2010&#39;),
- (0.0026591956849514394, &#39;CensusTract&#39;),
- (0.0026386617281733845, &#39;laaian1share&#39;),
- (0.0026074042395995145, &#39;TractOMultir&#39;),
- (0.002526220484181627, &#39;lahisp1share&#39;),
- (0.0023805553577460536, &#39;lahisp1&#39;),
- (0.0022895523405567363, &#39;laaian1&#39;),
- (0.0021026190560026266, &#39;TractHispanic&#39;),
- (0.0018323425634383288, &#39;TractAIAN&#39;),
- (0.0008945430872460378, &#39;lanhopi1share&#39;),
- (0.0008547965419605189, &#39;TractNHOPI&#39;),
- (0.0006797178693734737, &#39;lanhopi1&#39;)]</pre>
+<pre>[(0.25534151282997825, &#39;LowIncomeTracts&#39;),
+ (0.19792308549449666, &#39;LA1and10&#39;),
+ (0.09094762130186759, &#39;LATracts1&#39;),
+ (0.07647197769262416, &#39; MedianFamilyIncome &#39;),
+ (0.06364255791729209, &#39;LILATracts_Vehicle&#39;),
+ (0.0532931807635109, &#39;PovertyRate&#39;),
+ (0.02785598485668759, &#39;Urban&#39;),
+ (0.025685321965726333, &#39;lapop1&#39;),
+ (0.02234262005667865, &#39;lapop1share&#39;),
+ (0.020746775837209405, &#39;lasnap1share&#39;),
+ (0.017607265871916772, &#39;lalowi1share&#39;),
+ (0.015622017598014149, &#39;lalowi1&#39;),
+ (0.013786379512935744, &#39;lasnap1&#39;),
+ (0.012717097204514308, &#39;TractLOWI&#39;),
+ (0.009588551346929354, &#39;lawhite1&#39;),
+ (0.009089042013073978, &#39;lahunv1share&#39;),
+ (0.00828036020533839, &#39;lawhite1share&#39;),
+ (0.005491862412354092, &#39;TractWhite&#39;),
+ (0.005175941679234463, &#39;laomultir1share&#39;),
+ (0.004856101122367563, &#39;TractAsian&#39;),
+ (0.004835272627062658, &#39;TractHUNV&#39;),
+ (0.004788792838529309, &#39;HUNVFlag&#39;),
+ (0.004572356712942067, &#39;lahunv1&#39;),
+ (0.0041891607213291, &#39;lablack1&#39;),
+ (0.004159569684608814, &#39;laomultir1&#39;),
+ (0.004074069632019485, &#39;lablack1share&#39;),
+ (0.0035134596131654234, &#39;TractBlack&#39;),
+ (0.002983622156266527, &#39;laasian1&#39;),
+ (0.002961207597862994, &#39;lahisp1share&#39;),
+ (0.0029078737438575043, &#39;TractOMultir&#39;),
+ (0.002898911962783424, &#39;Pop2010&#39;),
+ (0.0028703106911249386, &#39;OHU2010&#39;),
+ (0.0027533321114914843, &#39;laaian1share&#39;),
+ (0.0026824034556701317, &#39;laasian1share&#39;),
+ (0.0025805929482396648, &#39;CensusTract&#39;),
+ (0.0023744537906545994, &#39;laaian1&#39;),
+ (0.002279696002161205, &#39;lahisp1&#39;),
+ (0.002246429048387146, &#39;TractHispanic&#39;),
+ (0.0017525876991007939, &#39;TractAIAN&#39;),
+ (0.0008775397484948042, &#39;lanhopi1share&#39;),
+ (0.0006674874744416668, &#39;TractNHOPI&#39;),
+ (0.0005656120570558503, &#39;lanhopi1&#39;)]</pre>
 </div>
 
 </div>
@@ -15030,7 +14980,7 @@ dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span>
