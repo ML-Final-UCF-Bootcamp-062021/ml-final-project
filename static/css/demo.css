@@ -198,7 +198,7 @@ a:focus {
 .section--menu {
 	position: relative;
 	overflow: hidden;
-	min-height: 80vh;
+	min-height: 40vh; /*changed min-height from 80vh to 40vh */
 	padding: 2em 0 8em;
 }
 
@@ -244,8 +244,8 @@ a:focus {
 /* Header */
 .codrops-header {
 	position: relative;
-	height: 100vh;
-	min-height: 600px;
+	height: 30vh; /*changed height from 100vh to 50vh */
+	min-height: 300px;
 	padding: 0em 1em 4em;
 	text-align: center;
 	color: #fff;
