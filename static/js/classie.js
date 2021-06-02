@@ -1,3 +1,4 @@
+/* Code from https://github.com/codrops/LineMenuStyles/blob/master/js/classie.js */
 /*!
  * classie - class helper functions
  * from bonzo https://github.com/ded/bonzo

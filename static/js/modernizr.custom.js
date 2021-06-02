@@ -1,3 +1,4 @@
+/* Code from https://github.com/codrops/LineMenuStyles/blob/master/js/modernizr.custom.js */
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-cssanimations-shiv-cssclasses-prefixed-testprop-testallprops-domprefixes-load
  */
